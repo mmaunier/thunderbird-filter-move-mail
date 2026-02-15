@@ -360,6 +360,9 @@ async function openFilterEditor(filterIndex) {
   const overlay = document.getElementById("filter-editor-overlay");
   const content = overlay.querySelector(".modal-content");
 
+  // Recharger les comptes et carnets d'adresses (pour refléter les changements dans TB)
+  await loadAccountsData();
+
   // Charger le HTML de l'éditeur
   const response = await fetch("../filter-editor/editor.html");
   const html = await response.text();

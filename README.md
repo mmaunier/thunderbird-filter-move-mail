@@ -6,7 +6,7 @@ Thunderbird 128+ extension to automatically filter and move messages based on cu
 
 ![Thunderbird](https://img.shields.io/badge/Thunderbird-128%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.0-orange)
+![Version](https://img.shields.io/badge/version-1.0.1-orange)
 
 ## Features
 
