@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "Berichten filteren en verplaatsen",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Filter en verplaats uw berichten automatisch met aangepaste regels, over meerdere mappen tegelijk.",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "Berichtenfilters",
+    "description": "Toolbar button title"
+  },
+
+  "popupRunAll": {
+    "message": "Alle filters uitvoeren",
+    "description": "Button to run all filters"
+  },
+  "popupRunFolder": {
+    "message": "Filters uitvoeren op deze map",
+    "description": "Button to run filters on selected folder(s)"
+  },
+  "popupManage": {
+    "message": "Filters beheren",
+    "description": "Button to open admin page"
+  },
+
+  "tabApplyFilters": {
+    "message": "Filters toepassen",
+    "description": "Apply filters tab title"
+  },
+  "tabManageFilters": {
+    "message": "Filters beheren",
+    "description": "Manage filters tab title"
+  },
+
+  "optionOnNewMessage": {
+    "message": "Bij ontvangst van een nieuw bericht",
+    "description": "Filter apply option"
+  },
+  "optionManual": {
+    "message": "Handmatig uitvoeren",
+    "description": "Filter apply option"
+  },
+  "optionAfterJunk": {
+    "message": "Na controle op ongewenste berichten",
+    "description": "Filter apply option"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "Mijn eigen e-mailadressen verwijderen",
+    "description": "Filter apply option"
+  },
+
+  "filtersFor": {
+    "message": "Filters voor:",
+    "description": "Account selection label"
+  },
+  "allAccounts": {
+    "message": "Alle accounts",
+    "description": "All accounts option"
+  },
+  "localFolders": {
+    "message": "Lokale mappen",
+    "description": "Local folders"
+  },
+  "filterOrderLabel": {
+    "message": "De filters worden in de volgende volgorde toegepast:",
+    "description": "Filter order label"
+  },
+  "columnFilter": {
+    "message": "Filter",
+    "description": "Filter column"
+  },
+  "columnActive": {
+    "message": "Actief",
+    "description": "Active column"
+  },
+  "columnDestination": {
+    "message": "Bestemming",
+    "description": "Destination folder column"
+  },
+
+  "btnNew": {
+    "message": "Nieuw",
+    "description": "New filter button"
+  },
+  "btnEdit": {
+    "message": "Bewerken",
+    "description": "Edit filter button"
+  },
+  "btnDelete": {
+    "message": "Verwijderen",
+    "description": "Delete filter button"
+  },
+  "btnMoveTop": {
+    "message": "Naar boven",
+    "description": "Move to top button"
+  },
+  "btnMoveUp": {
+    "message": "Omhoog",
+    "description": "Move up button"
+  },
+  "btnMoveDown": {
+    "message": "Omlaag",
+    "description": "Move down button"
+  },
+  "btnMoveBottom": {
+    "message": "Naar beneden",
+    "description": "Move to bottom button"
+  },
+
+  "btnCut": {
+    "message": "Knippen",
+    "description": "Cut button"
+  },
+  "btnCopy": {
+    "message": "Kopiëren",
+    "description": "Copy button"
+  },
+  "btnPaste": {
+    "message": "Plakken",
+    "description": "Paste button"
+  },
+  "btnClone": {
+    "message": "Klonen",
+    "description": "Clone button"
+  },
+  "btnSave": {
+    "message": "Opslaan",
+    "description": "Save button"
+  },
+  "btnRestore": {
+    "message": "Herstellen",
+    "description": "Restore button"
+  },
+
+  "chooseLabel": {
+    "message": "Kiezen:",
+    "description": "Choose label"
+  },
+  "selectedFilter": {
+    "message": "Geselecteerd filter",
+    "description": "Selected filter option"
+  },
+  "allFilters": {
+    "message": "Alle filters",
+    "description": "All filters option"
+  },
+  "btnExecute": {
+    "message": "Uitvoeren",
+    "description": "Execute button"
+  },
+
+  "filterEditorTitle": {
+    "message": "Filterinstellingen",
+    "description": "Filter editor window title"
+  },
+  "filterName": {
+    "message": "Filternaam:",
+    "description": "Filter name label"
+  },
+  "applyFilterWhen": {
+    "message": "Filter toepassen:",
+    "description": "Filter apply label"
+  },
+
+  "fieldFrom": {
+    "message": "Van",
+    "description": "From field"
+  },
+  "fieldTo": {
+    "message": "Aan",
+    "description": "To field"
+  },
+  "fieldCc": {
+    "message": "Cc",
+    "description": "Cc field"
+  },
+  "fieldBcc": {
+    "message": "Bcc",
+    "description": "Bcc field"
+  },
+  "fieldSubject": {
+    "message": "Onderwerp",
+    "description": "Subject field"
+  },
+  "fieldBody": {
+    "message": "Inhoud",
+    "description": "Body field"
+  },
+
+  "opContains": {
+    "message": "bevat",
+    "description": "Contains operator"
+  },
+  "opNotContains": {
+    "message": "bevat niet",
+    "description": "Does not contain operator"
+  },
+  "opIs": {
+    "message": "is",
+    "description": "Is operator"
+  },
+  "opIsNot": {
+    "message": "is niet",
+    "description": "Is not operator"
+  },
+  "opInAddressBook": {
+    "message": "staat in mijn adresboek",
+    "description": "In address book operator"
+  },
+  "opNotInAddressBook": {
+    "message": "staat niet in mijn adresboek",
+    "description": "Not in address book operator"
+  },
+
+  "matchAll": {
+    "message": "Voldoen aan alle volgende voorwaarden",
+    "description": "Match all radio"
+  },
+  "matchAny": {
+    "message": "Voldoen aan minstens één voorwaarde",
+    "description": "Match any radio"
+  },
+
+  "moveMessageTo": {
+    "message": "Bericht verplaatsen naar:",
+    "description": "Move to label"
+  },
+  "chooseFolder": {
+    "message": "Map kiezen…",
+    "description": "Folder choice placeholder"
+  },
+  "folderOn": {
+    "message": "op",
+    "description": "Folder on account separator"
+  },
+
+  "btnSaveFilter": {
+    "message": "Opslaan",
+    "description": "Save filter button"
+  },
+  "btnCancel": {
+    "message": "Annuleren",
+    "description": "Cancel button"
+  },
+
+  "confirmDelete": {
+    "message": "Weet u zeker dat u dit filter wilt verwijderen?",
+    "description": "Delete confirmation message"
+  },
+  "noFilterSelected": {
+    "message": "Geen filter geselecteerd.",
+    "description": "No filter selected message"
+  },
+  "filterSaved": {
+    "message": "Filter succesvol opgeslagen.",
+    "description": "Success message"
+  },
+  "filtersExecuted": {
+    "message": "Filters succesvol uitgevoerd.",
+    "description": "Execution complete message"
+  },
+  "errorEmptyRule": {
+    "message": "Een filterregel mag geen lege waarde hebben.",
+    "description": "Empty rule error"
+  },
+  "errorNoDestination": {
+    "message": "Kies een bestemmingsmap.",
+    "description": "No destination error"
+  },
+  "errorNoFilterName": {
+    "message": "Voer een filternaam in.",
+    "description": "No name error"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "bijv.: FROM contains john@mail.com AND SUBJECT contains factuur",
+    "description": "Smart filter field placeholder"
+  },
+  "smartFilterHelp": {
+    "message": "Syntax: {VELD} {OPERATOR} {waarde} [AND|OR ...]\nVelden: FROM, TO, CC, BCC, SUBJECT, BODY\nOperatoren: contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Smart filter syntax help"
+  },
+
+  "accountLabel": {
+    "message": "Account",
+    "description": "Account label in selector"
+  },
+  "activeLabel": {
+    "message": "Actief",
+    "description": "Active label in selector"
+  },
+
+  "exportSuccess": {
+    "message": "Configuratie succesvol geëxporteerd.",
+    "description": "Export success message"
+  },
+  "importSuccess": {
+    "message": "Configuratie succesvol geïmporteerd.",
+    "description": "Import success message"
+  },
+  "importError": {
+    "message": "Fout bij het importeren van het bestand.",
+    "description": "Import error"
+  }
+}

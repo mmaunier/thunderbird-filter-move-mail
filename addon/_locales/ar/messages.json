@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "تصفية ونقل الرسائل",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "قم بتصفية رسائلك ونقلها تلقائيًا باستخدام قواعد مخصصة، عبر مجلدات متعددة في وقت واحد.",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "مرشحات الرسائل",
+    "description": "Toolbar button title"
+  },
+
+  "popupRunAll": {
+    "message": "تشغيل جميع المرشحات",
+    "description": "Button to run all filters"
+  },
+  "popupRunFolder": {
+    "message": "تشغيل المرشحات على هذا المجلد",
+    "description": "Button to run filters on selected folder(s)"
+  },
+  "popupManage": {
+    "message": "إدارة المرشحات",
+    "description": "Button to open admin page"
+  },
+
+  "tabApplyFilters": {
+    "message": "تطبيق المرشحات",
+    "description": "Apply filters tab title"
+  },
+  "tabManageFilters": {
+    "message": "إدارة المرشحات",
+    "description": "Manage filters tab title"
+  },
+
+  "optionOnNewMessage": {
+    "message": "عند استقبال رسالة جديدة",
+    "description": "Filter apply option"
+  },
+  "optionManual": {
+    "message": "تشغيل يدوي",
+    "description": "Filter apply option"
+  },
+  "optionAfterJunk": {
+    "message": "بعد فحص البريد غير المرغوب",
+    "description": "Filter apply option"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "إزالة عناوين بريدي الإلكتروني",
+    "description": "Filter apply option"
+  },
+
+  "filtersFor": {
+    "message": "مرشحات لـ:",
+    "description": "Account selection label"
+  },
+  "allAccounts": {
+    "message": "جميع الحسابات",
+    "description": "All accounts option"
+  },
+  "localFolders": {
+    "message": "المجلدات المحلية",
+    "description": "Local folders"
+  },
+  "filterOrderLabel": {
+    "message": "سيتم تطبيق المرشحات بالترتيب التالي:",
+    "description": "Filter order label"
+  },
+  "columnFilter": {
+    "message": "مرشح",
+    "description": "Filter column"
+  },
+  "columnActive": {
+    "message": "نشط",
+    "description": "Active column"
+  },
+  "columnDestination": {
+    "message": "الوجهة",
+    "description": "Destination folder column"
+  },
+
+  "btnNew": {
+    "message": "جديد",
+    "description": "New filter button"
+  },
+  "btnEdit": {
+    "message": "تعديل",
+    "description": "Edit filter button"
+  },
+  "btnDelete": {
+    "message": "حذف",
+    "description": "Delete filter button"
+  },
+  "btnMoveTop": {
+    "message": "نقل للأعلى",
+    "description": "Move to top button"
+  },
+  "btnMoveUp": {
+    "message": "لأعلى",
+    "description": "Move up button"
+  },
+  "btnMoveDown": {
+    "message": "لأسفل",
+    "description": "Move down button"
+  },
+  "btnMoveBottom": {
+    "message": "نقل للأسفل",
+    "description": "Move to bottom button"
+  },
+
+  "btnCut": {
+    "message": "قص",
+    "description": "Cut button"
+  },
+  "btnCopy": {
+    "message": "نسخ",
+    "description": "Copy button"
+  },
+  "btnPaste": {
+    "message": "لصق",
+    "description": "Paste button"
+  },
+  "btnClone": {
+    "message": "استنساخ",
+    "description": "Clone button"
+  },
+  "btnSave": {
+    "message": "حفظ",
+    "description": "Save button"
+  },
+  "btnRestore": {
+    "message": "استعادة",
+    "description": "Restore button"
+  },
+
+  "chooseLabel": {
+    "message": "اختيار:",
+    "description": "Choose label"
+  },
+  "selectedFilter": {
+    "message": "المرشح المحدد",
+    "description": "Selected filter option"
+  },
+  "allFilters": {
+    "message": "جميع المرشحات",
+    "description": "All filters option"
+  },
+  "btnExecute": {
+    "message": "تنفيذ",
+    "description": "Execute button"
+  },
+
+  "filterEditorTitle": {
+    "message": "إعدادات المرشح",
+    "description": "Filter editor window title"
+  },
+  "filterName": {
+    "message": "اسم المرشح:",
+    "description": "Filter name label"
+  },
+  "applyFilterWhen": {
+    "message": "تطبيق المرشح:",
+    "description": "Filter apply label"
+  },
+
+  "fieldFrom": {
+    "message": "من",
+    "description": "From field"
+  },
+  "fieldTo": {
+    "message": "إلى",
+    "description": "To field"
+  },
+  "fieldCc": {
+    "message": "نسخة",
+    "description": "Cc field"
+  },
+  "fieldBcc": {
+    "message": "نسخة مخفية",
+    "description": "Bcc field"
+  },
+  "fieldSubject": {
+    "message": "الموضوع",
+    "description": "Subject field"
+  },
+  "fieldBody": {
+    "message": "النص",
+    "description": "Body field"
+  },
+
+  "opContains": {
+    "message": "يحتوي على",
+    "description": "Contains operator"
+  },
+  "opNotContains": {
+    "message": "لا يحتوي على",
+    "description": "Does not contain operator"
+  },
+  "opIs": {
+    "message": "يساوي",
+    "description": "Is operator"
+  },
+  "opIsNot": {
+    "message": "لا يساوي",
+    "description": "Is not operator"
+  },
+  "opInAddressBook": {
+    "message": "موجود في دفتر العناوين",
+    "description": "In address book operator"
+  },
+  "opNotInAddressBook": {
+    "message": "غير موجود في دفتر العناوين",
+    "description": "Not in address book operator"
+  },
+
+  "matchAll": {
+    "message": "مطابقة جميع الشروط التالية",
+    "description": "Match all radio"
+  },
+  "matchAny": {
+    "message": "مطابقة أي من الشروط التالية",
+    "description": "Match any radio"
+  },
+
+  "moveMessageTo": {
+    "message": "نقل الرسالة إلى:",
+    "description": "Move to label"
+  },
+  "chooseFolder": {
+    "message": "اختيار مجلد…",
+    "description": "Folder choice placeholder"
+  },
+  "folderOn": {
+    "message": "في",
+    "description": "Folder on account separator"
+  },
+
+  "btnSaveFilter": {
+    "message": "حفظ",
+    "description": "Save filter button"
+  },
+  "btnCancel": {
+    "message": "إلغاء",
+    "description": "Cancel button"
+  },
+
+  "confirmDelete": {
+    "message": "هل أنت متأكد من حذف هذا المرشح؟",
+    "description": "Delete confirmation message"
+  },
+  "noFilterSelected": {
+    "message": "لم يتم تحديد أي مرشح.",
+    "description": "No filter selected message"
+  },
+  "filterSaved": {
+    "message": "تم حفظ المرشح بنجاح.",
+    "description": "Success message"
+  },
+  "filtersExecuted": {
+    "message": "تم تنفيذ المرشحات بنجاح.",
+    "description": "Execution complete message"
+  },
+  "errorEmptyRule": {
+    "message": "لا يمكن أن تكون قيمة قاعدة المرشح فارغة.",
+    "description": "Empty rule error"
+  },
+  "errorNoDestination": {
+    "message": "يرجى اختيار مجلد الوجهة.",
+    "description": "No destination error"
+  },
+  "errorNoFilterName": {
+    "message": "يرجى إدخال اسم للمرشح.",
+    "description": "No name error"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "مثال: FROM contains john@mail.com AND SUBJECT contains فاتورة",
+    "description": "Smart filter field placeholder"
+  },
+  "smartFilterHelp": {
+    "message": "الصيغة: {حقل} {عامل} {قيمة} [AND|OR ...]\nالحقول: FROM, TO, CC, BCC, SUBJECT, BODY\nالعوامل: contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Smart filter syntax help"
+  },
+
+  "accountLabel": {
+    "message": "حساب",
+    "description": "Account label in selector"
+  },
+  "activeLabel": {
+    "message": "نشط",
+    "description": "Active label in selector"
+  },
+
+  "exportSuccess": {
+    "message": "تم تصدير الإعدادات بنجاح.",
+    "description": "Export success message"
+  },
+  "importSuccess": {
+    "message": "تم استيراد الإعدادات بنجاح.",
+    "description": "Import success message"
+  },
+  "importError": {
+    "message": "خطأ أثناء استيراد الملف.",
+    "description": "Import error"
+  }
+}

@@ -6,7 +6,7 @@ Thunderbird 128+ extension to automatically filter and move messages based on cu
 
 ![Thunderbird](https://img.shields.io/badge/Thunderbird-128%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.1-orange)
+![Version](https://img.shields.io/badge/version-1.0.2-orange)
 
 ## Features
 
@@ -73,8 +73,15 @@ thunderbird-filter-move-mail/
 ├── addon/                          # Thunderbird Extension
 │   ├── manifest.json               # Manifest V2 (TB 128+)
 │   ├── _locales/
+│   │   ├── ar/messages.json        # Arabic
+│   │   ├── de/messages.json        # German
 │   │   ├── en/messages.json        # English
-│   │   └── fr/messages.json        # French (default)
+│   │   ├── es/messages.json        # Spanish
+│   │   ├── fr/messages.json        # French (default)
+│   │   ├── it/messages.json        # Italian
+│   │   ├── ja/messages.json        # Japanese
+│   │   ├── nl/messages.json        # Dutch
+│   │   └── zh_CN/messages.json     # Chinese (Simplified)
 │   ├── background/
 │   │   ├── background.html         # Background page
 │   │   └── background.js           # Main script (events, messaging)
@@ -144,7 +151,7 @@ BODY contains {important keyword with spaces}
 | `messages` | List, read, and move messages |
 | `mailTabs` | Get selected folder(s) (multi-selection TB 128+) |
 | `storage` | Store filters and preferences |
-| `i18n` | Internationalization (fr/en) |
+| `i18n` | Internationalization (9 languages) |
 
 ## Permissions
 
@@ -161,6 +168,13 @@ BODY contains {important keyword with spaces}
 
 - 🇫🇷 French (default)
 - 🇬🇧 English
+- 🇩🇪 German
+- 🇪🇸 Spanish
+- 🇮🇹 Italian
+- 🇳🇱 Dutch
+- 🇯🇵 Japanese
+- 🇨🇳 Chinese (Simplified)
+- 🇸🇦 Arabic
 
 ## Compatibility
 

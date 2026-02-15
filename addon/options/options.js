@@ -3,6 +3,22 @@
  * Gère les 2 onglets (Appliquer filtres / Gestion des filtres)
  */
 
+// ─── Décodage IMAP Modified UTF-7 (RFC 3501) ───
+function decodeImapUtf7(str) {
+  if (!str) return str;
+  return str.replace(/&([^-]*)-/g, (match, encoded) => {
+    if (encoded === "") return "&"; // &- → &
+    // Convertir UTF-7 modifié (base64 avec , au lieu de /) en UTF-16BE
+    const b64 = encoded.replace(/,/g, "/");
+    const binary = atob(b64);
+    let result = "";
+    for (let i = 0; i < binary.length; i += 2) {
+      result += String.fromCharCode((binary.charCodeAt(i) << 8) | binary.charCodeAt(i + 1));
+    }
+    return result;
+  });
+}
+
 // ─── État local ───
 let filters = [];
 let selectedFilterIndex = -1;
@@ -133,7 +149,7 @@ function renderFilterList() {
 
     const smartText = conditionsToSmartFilterText(filter);
     const destPath = filter.action && filter.action.destinationPath
-      ? filter.action.destinationPath
+      ? decodeImapUtf7(filter.action.destinationPath)
       : "";
     tr.innerHTML = `
       <td class="td-name">${escapeHtml(filter.name || "(sans nom)")}</td>

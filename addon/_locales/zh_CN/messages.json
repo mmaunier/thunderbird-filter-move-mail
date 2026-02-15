@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "过滤和移动邮件",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "使用自定义规则自动过滤和移动邮件，支持同时处理多个文件夹。",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "邮件过滤器",
+    "description": "Toolbar button title"
+  },
+
+  "popupRunAll": {
+    "message": "运行所有过滤器",
+    "description": "Button to run all filters"
+  },
+  "popupRunFolder": {
+    "message": "对此文件夹运行过滤器",
+    "description": "Button to run filters on selected folder(s)"
+  },
+  "popupManage": {
+    "message": "管理过滤器",
+    "description": "Button to open admin page"
+  },
+
+  "tabApplyFilters": {
+    "message": "应用过滤器",
+    "description": "Apply filters tab title"
+  },
+  "tabManageFilters": {
+    "message": "管理过滤器",
+    "description": "Manage filters tab title"
+  },
+
+  "optionOnNewMessage": {
+    "message": "收到新邮件时",
+    "description": "Filter apply option"
+  },
+  "optionManual": {
+    "message": "手动运行",
+    "description": "Filter apply option"
+  },
+  "optionAfterJunk": {
+    "message": "垃圾邮件检查后",
+    "description": "Filter apply option"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "排除自己的邮件地址",
+    "description": "Filter apply option"
+  },
+
+  "filtersFor": {
+    "message": "过滤账户:",
+    "description": "Account selection label"
+  },
+  "allAccounts": {
+    "message": "所有账户",
+    "description": "All accounts option"
+  },
+  "localFolders": {
+    "message": "本地文件夹",
+    "description": "Local folders"
+  },
+  "filterOrderLabel": {
+    "message": "过滤器将按以下顺序应用:",
+    "description": "Filter order label"
+  },
+  "columnFilter": {
+    "message": "过滤器",
+    "description": "Filter column"
+  },
+  "columnActive": {
+    "message": "启用",
+    "description": "Active column"
+  },
+  "columnDestination": {
+    "message": "目标",
+    "description": "Destination folder column"
+  },
+
+  "btnNew": {
+    "message": "新建",
+    "description": "New filter button"
+  },
+  "btnEdit": {
+    "message": "编辑",
+    "description": "Edit filter button"
+  },
+  "btnDelete": {
+    "message": "删除",
+    "description": "Delete filter button"
+  },
+  "btnMoveTop": {
+    "message": "移到顶部",
+    "description": "Move to top button"
+  },
+  "btnMoveUp": {
+    "message": "上移",
+    "description": "Move up button"
+  },
+  "btnMoveDown": {
+    "message": "下移",
+    "description": "Move down button"
+  },
+  "btnMoveBottom": {
+    "message": "移到底部",
+    "description": "Move to bottom button"
+  },
+
+  "btnCut": {
+    "message": "剪切",
+    "description": "Cut button"
+  },
+  "btnCopy": {
+    "message": "复制",
+    "description": "Copy button"
+  },
+  "btnPaste": {
+    "message": "粘贴",
+    "description": "Paste button"
+  },
+  "btnClone": {
+    "message": "克隆",
+    "description": "Clone button"
+  },
+  "btnSave": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "btnRestore": {
+    "message": "恢复",
+    "description": "Restore button"
+  },
+
+  "chooseLabel": {
+    "message": "选择:",
+    "description": "Choose label"
+  },
+  "selectedFilter": {
+    "message": "已选过滤器",
+    "description": "Selected filter option"
+  },
+  "allFilters": {
+    "message": "所有过滤器",
+    "description": "All filters option"
+  },
+  "btnExecute": {
+    "message": "执行",
+    "description": "Execute button"
+  },
+
+  "filterEditorTitle": {
+    "message": "过滤器设置",
+    "description": "Filter editor window title"
+  },
+  "filterName": {
+    "message": "过滤器名称:",
+    "description": "Filter name label"
+  },
+  "applyFilterWhen": {
+    "message": "应用过滤器:",
+    "description": "Filter apply label"
+  },
+
+  "fieldFrom": {
+    "message": "发件人",
+    "description": "From field"
+  },
+  "fieldTo": {
+    "message": "收件人",
+    "description": "To field"
+  },
+  "fieldCc": {
+    "message": "抄送",
+    "description": "Cc field"
+  },
+  "fieldBcc": {
+    "message": "密送",
+    "description": "Bcc field"
+  },
+  "fieldSubject": {
+    "message": "主题",
+    "description": "Subject field"
+  },
+  "fieldBody": {
+    "message": "正文",
+    "description": "Body field"
+  },
+
+  "opContains": {
+    "message": "包含",
+    "description": "Contains operator"
+  },
+  "opNotContains": {
+    "message": "不包含",
+    "description": "Does not contain operator"
+  },
+  "opIs": {
+    "message": "等于",
+    "description": "Is operator"
+  },
+  "opIsNot": {
+    "message": "不等于",
+    "description": "Is not operator"
+  },
+  "opInAddressBook": {
+    "message": "在通讯录中",
+    "description": "In address book operator"
+  },
+  "opNotInAddressBook": {
+    "message": "不在通讯录中",
+    "description": "Not in address book operator"
+  },
+
+  "matchAll": {
+    "message": "满足以下所有条件",
+    "description": "Match all radio"
+  },
+  "matchAny": {
+    "message": "满足以下任一条件",
+    "description": "Match any radio"
+  },
+
+  "moveMessageTo": {
+    "message": "将邮件移动到:",
+    "description": "Move to label"
+  },
+  "chooseFolder": {
+    "message": "选择文件夹…",
+    "description": "Folder choice placeholder"
+  },
+  "folderOn": {
+    "message": "-",
+    "description": "Folder on account separator"
+  },
+
+  "btnSaveFilter": {
+    "message": "保存",
+    "description": "Save filter button"
+  },
+  "btnCancel": {
+    "message": "取消",
+    "description": "Cancel button"
+  },
+
+  "confirmDelete": {
+    "message": "确定要删除此过滤器吗？",
+    "description": "Delete confirmation message"
+  },
+  "noFilterSelected": {
+    "message": "未选择过滤器。",
+    "description": "No filter selected message"
+  },
+  "filterSaved": {
+    "message": "过滤器已保存。",
+    "description": "Success message"
+  },
+  "filtersExecuted": {
+    "message": "过滤器已执行完毕。",
+    "description": "Execution complete message"
+  },
+  "errorEmptyRule": {
+    "message": "过滤规则的值不能为空。",
+    "description": "Empty rule error"
+  },
+  "errorNoDestination": {
+    "message": "请选择目标文件夹。",
+    "description": "No destination error"
+  },
+  "errorNoFilterName": {
+    "message": "请输入过滤器名称。",
+    "description": "No name error"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "例: FROM contains john@mail.com AND SUBJECT contains 发票",
+    "description": "Smart filter field placeholder"
+  },
+  "smartFilterHelp": {
+    "message": "语法: {字段} {运算符} {值} [AND|OR ...]\n字段: FROM, TO, CC, BCC, SUBJECT, BODY\n运算符: contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Smart filter syntax help"
+  },
+
+  "accountLabel": {
+    "message": "账户",
+    "description": "Account label in selector"
+  },
+  "activeLabel": {
+    "message": "启用",
+    "description": "Active label in selector"
+  },
+
+  "exportSuccess": {
+    "message": "配置已导出。",
+    "description": "Export success message"
+  },
+  "importSuccess": {
+    "message": "配置已导入。",
+    "description": "Import success message"
+  },
+  "importError": {
+    "message": "导入文件时出错。",
+    "description": "Import error"
+  }
+}

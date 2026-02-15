@@ -6,7 +6,7 @@ Extension Thunderbird 128+ pour filtrer et déplacer automatiquement les message
 
 ![Thunderbird](https://img.shields.io/badge/Thunderbird-128%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Version](https://img.shields.io/badge/version-1.0.1-orange)
+![Version](https://img.shields.io/badge/version-1.0.2-orange)
 
 ## Fonctionnalités
 
@@ -73,8 +73,15 @@ thunderbird-filter-move-mail/
 ├── addon/                          # Extension Thunderbird
 │   ├── manifest.json               # Manifest V2 (TB 128+)
 │   ├── _locales/
+│   │   ├── ar/messages.json        # Arabe
+│   │   ├── de/messages.json        # Allemand
 │   │   ├── en/messages.json        # Anglais
-│   │   └── fr/messages.json        # Français (par défaut)
+│   │   ├── es/messages.json        # Espagnol
+│   │   ├── fr/messages.json        # Français (par défaut)
+│   │   ├── it/messages.json        # Italien
+│   │   ├── ja/messages.json        # Japonais
+│   │   ├── nl/messages.json        # Néerlandais
+│   │   └── zh_CN/messages.json     # Chinois (simplifié)
 │   ├── background/
 │   │   ├── background.html         # Page background
 │   │   └── background.js           # Script principal (événements, communication)
@@ -144,7 +151,7 @@ BODY contains {mot-clé important avec espaces}
 | `messages` | Lister, lire et déplacer les messages |
 | `mailTabs` | Obtenir le(s) dossier(s) sélectionné(s) (multi-sélection TB 128+) |
 | `storage` | Stocker filtres et préférences |
-| `i18n` | Internationalisation (fr/en) |
+| `i18n` | Internationalisation (9 langues) |
 
 ## Permissions
 
@@ -161,6 +168,13 @@ BODY contains {mot-clé important avec espaces}
 
 - 🇫🇷 Français (par défaut)
 - 🇬🇧 Anglais
+- 🇩🇪 Allemand
+- 🇪🇸 Espagnol
+- 🇮🇹 Italien
+- 🇳🇱 Néerlandais
+- 🇯🇵 Japonais
+- 🇨🇳 Chinois (simplifié)
+- 🇸🇦 Arabe
 
 ## Compatibilité
 

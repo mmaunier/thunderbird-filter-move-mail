@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "メッセージのフィルターと移動",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "カスタムルールに基づいてメッセージを自動的にフィルタリングし、複数のフォルダーに同時に移動します。",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "メッセージフィルター",
+    "description": "Toolbar button title"
+  },
+
+  "popupRunAll": {
+    "message": "すべてのフィルターを実行",
+    "description": "Button to run all filters"
+  },
+  "popupRunFolder": {
+    "message": "このフォルダーでフィルターを実行",
+    "description": "Button to run filters on selected folder(s)"
+  },
+  "popupManage": {
+    "message": "フィルター管理",
+    "description": "Button to open admin page"
+  },
+
+  "tabApplyFilters": {
+    "message": "フィルター適用",
+    "description": "Apply filters tab title"
+  },
+  "tabManageFilters": {
+    "message": "フィルター管理",
+    "description": "Manage filters tab title"
+  },
+
+  "optionOnNewMessage": {
+    "message": "新しいメッセージの受信時",
+    "description": "Filter apply option"
+  },
+  "optionManual": {
+    "message": "手動で実行",
+    "description": "Filter apply option"
+  },
+  "optionAfterJunk": {
+    "message": "迷惑メールチェック後",
+    "description": "Filter apply option"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "自分のメールアドレスを除外",
+    "description": "Filter apply option"
+  },
+
+  "filtersFor": {
+    "message": "対象アカウント:",
+    "description": "Account selection label"
+  },
+  "allAccounts": {
+    "message": "すべてのアカウント",
+    "description": "All accounts option"
+  },
+  "localFolders": {
+    "message": "ローカルフォルダー",
+    "description": "Local folders"
+  },
+  "filterOrderLabel": {
+    "message": "フィルターは以下の順序で適用されます:",
+    "description": "Filter order label"
+  },
+  "columnFilter": {
+    "message": "フィルター",
+    "description": "Filter column"
+  },
+  "columnActive": {
+    "message": "有効",
+    "description": "Active column"
+  },
+  "columnDestination": {
+    "message": "移動先",
+    "description": "Destination folder column"
+  },
+
+  "btnNew": {
+    "message": "新規",
+    "description": "New filter button"
+  },
+  "btnEdit": {
+    "message": "編集",
+    "description": "Edit filter button"
+  },
+  "btnDelete": {
+    "message": "削除",
+    "description": "Delete filter button"
+  },
+  "btnMoveTop": {
+    "message": "先頭へ",
+    "description": "Move to top button"
+  },
+  "btnMoveUp": {
+    "message": "上へ",
+    "description": "Move up button"
+  },
+  "btnMoveDown": {
+    "message": "下へ",
+    "description": "Move down button"
+  },
+  "btnMoveBottom": {
+    "message": "末尾へ",
+    "description": "Move to bottom button"
+  },
+
+  "btnCut": {
+    "message": "切り取り",
+    "description": "Cut button"
+  },
+  "btnCopy": {
+    "message": "コピー",
+    "description": "Copy button"
+  },
+  "btnPaste": {
+    "message": "貼り付け",
+    "description": "Paste button"
+  },
+  "btnClone": {
+    "message": "複製",
+    "description": "Clone button"
+  },
+  "btnSave": {
+    "message": "保存",
+    "description": "Save button"
+  },
+  "btnRestore": {
+    "message": "復元",
+    "description": "Restore button"
+  },
+
+  "chooseLabel": {
+    "message": "選択:",
+    "description": "Choose label"
+  },
+  "selectedFilter": {
+    "message": "選択中のフィルター",
+    "description": "Selected filter option"
+  },
+  "allFilters": {
+    "message": "すべてのフィルター",
+    "description": "All filters option"
+  },
+  "btnExecute": {
+    "message": "実行",
+    "description": "Execute button"
+  },
+
+  "filterEditorTitle": {
+    "message": "フィルター設定",
+    "description": "Filter editor window title"
+  },
+  "filterName": {
+    "message": "フィルター名:",
+    "description": "Filter name label"
+  },
+  "applyFilterWhen": {
+    "message": "フィルター適用:",
+    "description": "Filter apply label"
+  },
+
+  "fieldFrom": {
+    "message": "差出人",
+    "description": "From field"
+  },
+  "fieldTo": {
+    "message": "宛先",
+    "description": "To field"
+  },
+  "fieldCc": {
+    "message": "Cc",
+    "description": "Cc field"
+  },
+  "fieldBcc": {
+    "message": "Bcc",
+    "description": "Bcc field"
+  },
+  "fieldSubject": {
+    "message": "件名",
+    "description": "Subject field"
+  },
+  "fieldBody": {
+    "message": "本文",
+    "description": "Body field"
+  },
+
+  "opContains": {
+    "message": "を含む",
+    "description": "Contains operator"
+  },
+  "opNotContains": {
+    "message": "を含まない",
+    "description": "Does not contain operator"
+  },
+  "opIs": {
+    "message": "が一致",
+    "description": "Is operator"
+  },
+  "opIsNot": {
+    "message": "が不一致",
+    "description": "Is not operator"
+  },
+  "opInAddressBook": {
+    "message": "がアドレス帳に存在",
+    "description": "In address book operator"
+  },
+  "opNotInAddressBook": {
+    "message": "がアドレス帳に不在",
+    "description": "Not in address book operator"
+  },
+
+  "matchAll": {
+    "message": "以下のすべての条件に一致",
+    "description": "Match all radio"
+  },
+  "matchAny": {
+    "message": "以下のいずれかの条件に一致",
+    "description": "Match any radio"
+  },
+
+  "moveMessageTo": {
+    "message": "メッセージの移動先:",
+    "description": "Move to label"
+  },
+  "chooseFolder": {
+    "message": "フォルダーを選択…",
+    "description": "Folder choice placeholder"
+  },
+  "folderOn": {
+    "message": "-",
+    "description": "Folder on account separator"
+  },
+
+  "btnSaveFilter": {
+    "message": "保存",
+    "description": "Save filter button"
+  },
+  "btnCancel": {
+    "message": "キャンセル",
+    "description": "Cancel button"
+  },
+
+  "confirmDelete": {
+    "message": "このフィルターを削除しますか？",
+    "description": "Delete confirmation message"
+  },
+  "noFilterSelected": {
+    "message": "フィルターが選択されていません。",
+    "description": "No filter selected message"
+  },
+  "filterSaved": {
+    "message": "フィルターを保存しました。",
+    "description": "Success message"
+  },
+  "filtersExecuted": {
+    "message": "フィルターの実行が完了しました。",
+    "description": "Execution complete message"
+  },
+  "errorEmptyRule": {
+    "message": "フィルタールールの値は空にできません。",
+    "description": "Empty rule error"
+  },
+  "errorNoDestination": {
+    "message": "移動先フォルダーを選択してください。",
+    "description": "No destination error"
+  },
+  "errorNoFilterName": {
+    "message": "フィルター名を入力してください。",
+    "description": "No name error"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "例: FROM contains john@mail.com AND SUBJECT contains 請求書",
+    "description": "Smart filter field placeholder"
+  },
+  "smartFilterHelp": {
+    "message": "構文: {フィールド} {演算子} {値} [AND|OR ...]\nフィールド: FROM, TO, CC, BCC, SUBJECT, BODY\n演算子: contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Smart filter syntax help"
+  },
+
+  "accountLabel": {
+    "message": "アカウント",
+    "description": "Account label in selector"
+  },
+  "activeLabel": {
+    "message": "有効",
+    "description": "Active label in selector"
+  },
+
+  "exportSuccess": {
+    "message": "設定をエクスポートしました。",
+    "description": "Export success message"
+  },
+  "importSuccess": {
+    "message": "設定をインポートしました。",
+    "description": "Import success message"
+  },
+  "importError": {
+    "message": "ファイルのインポートに失敗しました。",
+    "description": "Import error"
+  }
+}
