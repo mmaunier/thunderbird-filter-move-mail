@@ -1,0 +1,17 @@
+{
+  "addons": {
+    "filter-move-mail@mmaunier.github.io": {
+      "updates": [
+        {
+          "version": "1.0.0",
+          "update_link": "https://github.com/mmaunier/thunderbird-filter-move-mail/releases/download/v1.0/thunderbird-filter-move-mail-v1.0.0.xpi",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "128.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

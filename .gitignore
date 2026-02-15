@@ -1,0 +1,3 @@
+.vscode/
+*.xpi
+!releases/*.xpi

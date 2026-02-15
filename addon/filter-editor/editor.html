@@ -1,0 +1,107 @@
+<!-- 
+  editor.html - Formulaire d'édition de filtre (chargé dans la modal)
+  Note: Ce fichier est chargé en fragment HTML, pas comme page complète
+-->
+<div class="editor-container">
+  <h2 class="editor-title" data-i18n="filterEditorTitle">Réglages du filtre</h2>
+
+  <!-- Nom du filtre -->
+  <div class="editor-field">
+    <label for="filter-name" data-i18n="filterName">Nom du filtre :</label>
+    <input type="text" id="filter-name" class="editor-input" placeholder="Mon filtre">
+  </div>
+
+  <!-- Application du filtre -->
+  <fieldset class="editor-fieldset">
+    <legend data-i18n="applyFilterWhen">Appliquer le filtre :</legend>
+    <div class="editor-checkbox-row">
+      <label>
+        <input type="checkbox" id="editor-on-new">
+        <span data-i18n="optionOnNewMessage">Lors de la réception d'un nouveau message</span>
+      </label>
+      <label>
+        <input type="checkbox" id="editor-manual" checked>
+        <span data-i18n="optionManual">Lancer manuellement</span>
+      </label>
+      <label>
+        <input type="checkbox" id="editor-after-junk">
+        <span data-i18n="optionAfterJunk">Après la vérification des indésirables</span>
+      </label>
+    </div>
+  </fieldset>
+
+  <!-- Sélection des comptes pour ce filtre -->
+  <fieldset class="editor-fieldset">
+    <legend data-i18n="filtersFor">Filtres pour :</legend>
+    <div class="editor-account-selector">
+      <div class="editor-account-item">
+        <label>
+          <input type="checkbox" id="editor-account-all" checked>
+          <span data-i18n="allAccounts">Tous les comptes</span>
+        </label>
+      </div>
+      <div id="editor-account-list" class="editor-account-list">
+        <!-- Rempli dynamiquement -->
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Mode de correspondance -->
+  <div class="editor-match-mode">
+    <label>
+      <input type="radio" name="match-mode" value="any" checked>
+      <span data-i18n="matchAny">Valider au moins une des conditions</span>
+    </label>
+    <label>
+      <input type="radio" name="match-mode" value="all">
+      <span data-i18n="matchAll">Valider toutes les conditions suivantes</span>
+    </label>
+  </div>
+
+  <!-- Règles de filtrage -->
+  <fieldset class="editor-fieldset">
+    <legend>Conditions</legend>
+    <div id="conditions-list">
+      <!-- Rempli dynamiquement -->
+    </div>
+
+    <!-- Filtre intelligent (syntaxe type Gmail) -->
+    <div class="smart-filter-section">
+      <details>
+        <summary>🧠 Smart Filter (syntaxe avancée)</summary>
+        <div class="smart-filter-content">
+          <textarea id="smart-filter-input" rows="2" 
+                    data-i18n-placeholder="smartFilterPlaceholder"
+                    placeholder="ex: FROM contains john@mail.com AND SUBJECT contains facture"></textarea>
+          <button id="btn-parse-smart" class="small-btn">Appliquer</button>
+          <div class="smart-filter-help" data-i18n="smartFilterHelp"></div>
+        </div>
+      </details>
+    </div>
+  </fieldset>
+
+  <!-- Destination -->
+  <fieldset class="editor-fieldset">
+    <legend data-i18n="moveMessageTo">Déplacer le message vers :</legend>
+    <div class="folder-selector">
+      <input type="text" id="selected-folder-display" class="editor-input" readonly
+             data-i18n-placeholder="chooseFolder" placeholder="Choisir le dossier…">
+      <button id="btn-choose-folder" class="small-btn">📂</button>
+    </div>
+    <!-- Arbre des dossiers -->
+    <div id="folder-tree-container" class="folder-tree-container hidden">
+      <div class="folder-tree-search">
+        <input type="text" id="folder-search" placeholder="🔍 Rechercher..." class="editor-input">
+      </div>
+      <div id="folder-tree" class="folder-tree">
+        <!-- Rempli dynamiquement -->
+      </div>
+    </div>
+  </fieldset>
+
+  <!-- Boutons de validation -->
+  <div class="editor-buttons">
+    <button id="btn-save-filter" class="primary-btn" data-i18n="btnSaveFilter">Enregistrer</button>
+    <button id="btn-cancel-filter" class="secondary-btn" data-i18n="btnCancel">Annuler</button>
+  </div>
+</div>

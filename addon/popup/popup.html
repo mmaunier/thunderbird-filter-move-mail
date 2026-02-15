@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="popup-header">
+      <img src="../icons/filter-32.svg" alt="" class="popup-icon">
+      <span class="popup-title" data-i18n="extensionName">Filtre & Déplacement</span>
+    </div>
+    <div class="popup-buttons">
+      <button id="btn-run-all" class="popup-btn" data-i18n="popupRunAll">
+        Lancer tous les filtres
+      </button>
+      <button id="btn-run-folder" class="popup-btn" data-i18n="popupRunFolder">
+        Lancer les filtres sur ce dossier
+      </button>
+      <div class="popup-separator"></div>
+      <button id="btn-manage" class="popup-btn popup-btn-manage" data-i18n="popupManage">
+        Gestion des filtres
+      </button>
+    </div>
+    <div id="popup-status" class="popup-status hidden"></div>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

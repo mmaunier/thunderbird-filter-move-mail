@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="tabManageFilters">Gestion des filtres</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options-container">
+    <!-- Onglets -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab-apply" data-i18n="tabApplyFilters">Appliquer filtres</button>
+      <button class="tab-btn" data-tab="tab-manage" data-i18n="tabManageFilters">Gestion des filtres</button>
+    </div>
+
+    <!-- TAB 1 : Appliquer filtres -->
+    <div id="tab-apply" class="tab-content active">
+      <fieldset>
+        <legend data-i18n="tabApplyFilters">Appliquer filtres</legend>
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox" id="opt-on-new-message">
+            <span data-i18n="optionOnNewMessage">Lors de la réception d'un nouveau message</span>
+          </label>
+          <label>
+            <input type="checkbox" id="opt-manual" checked>
+            <span data-i18n="optionManual">Lancer manuellement</span>
+          </label>
+          <label>
+            <input type="checkbox" id="opt-after-junk">
+            <span data-i18n="optionAfterJunk">Après la vérification des indésirables</span>
+          </label>
+          <label>
+            <input type="checkbox" id="opt-remove-own" checked>
+            <span data-i18n="optionRemoveOwnEmails">Supprimer mes propres adresses e-mail</span>
+          </label>
+        </div>
+      </fieldset>
+    </div>
+
+    <!-- TAB 2 : Gestion des filtres -->
+    <div id="tab-manage" class="tab-content">
+      <!-- Barre d'outils -->
+      <div class="toolbar">
+        <div class="toolbar-group">
+          <button id="btn-toolbar-new" class="toolbar-btn" title="" data-i18n-title="btnNew">
+            <span class="icon">➕</span> <span data-i18n="btnNew">Nouveau</span>
+          </button>
+          <button id="btn-toolbar-delete" class="toolbar-btn" title="" data-i18n-title="btnDelete">
+            <span class="icon">🗑️</span> <span data-i18n="btnDelete">Supprimer</span>
+          </button>
+          <button id="btn-clone" class="toolbar-btn" title="" data-i18n-title="btnClone">
+            <span class="icon">🐑</span> <span data-i18n="btnClone">Cloner</span>
+          </button>
+          <button id="btn-toolbar-edit" class="toolbar-btn" title="" data-i18n-title="btnEdit">
+            <span class="icon">✏️</span> <span data-i18n="btnEdit">Modifier</span>
+          </button>
+        </div>
+        <div class="toolbar-separator"></div>
+        <div class="toolbar-group">
+          <button id="btn-save-config" class="toolbar-btn" title="" data-i18n-title="btnSave">
+            <span class="icon">💾</span> <span data-i18n="btnSave">Sauvegarder</span>
+          </button>
+          <button id="btn-restore-config" class="toolbar-btn" title="" data-i18n-title="btnRestore">
+            <span class="icon">📂</span> <span data-i18n="btnRestore">Restaurer</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Liste des filtres -->
+      <div class="filter-section">
+        <label class="section-label" data-i18n="filterOrderLabel">Les filtres seront appliqués dans l'ordre suivant :</label>
+        <div class="filter-list-container">
+          <div class="filter-list-wrapper">
+            <table class="filter-table">
+              <thead>
+                <tr>
+                  <th class="col-filter" data-i18n="columnFilter">Filtre</th>
+                  <th class="col-smart">Smart Filter</th>
+                  <th class="col-destination" data-i18n="columnDestination">Destination</th>
+                  <th class="col-active" data-i18n="columnActive">Actif</th>
+                </tr>
+              </thead>
+              <tbody id="filter-list-body">
+                <!-- Rempli dynamiquement -->
+              </tbody>
+            </table>
+          </div>
+          <!-- Boutons d'action -->
+          <div class="filter-actions">
+            <button id="btn-new" class="action-btn" data-i18n="btnNew">Nouveau</button>
+            <button id="btn-edit" class="action-btn" data-i18n="btnEdit">Modifier</button>
+            <button id="btn-delete" class="action-btn" data-i18n="btnDelete">Supprimer</button>
+            <div class="action-separator"></div>
+            <button id="btn-move-top" class="action-btn" data-i18n="btnMoveTop">⤒ Haut</button>
+            <button id="btn-move-up" class="action-btn" data-i18n="btnMoveUp">↑ Monter</button>
+            <button id="btn-move-down" class="action-btn" data-i18n="btnMoveDown">↓ Descendre</button>
+            <button id="btn-move-bottom" class="action-btn" data-i18n="btnMoveBottom">⤓ Bas</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exécution -->
+      <div class="execute-section">
+        <label data-i18n="chooseLabel">Choisir :</label>
+        <select id="execute-scope">
+          <option value="all" data-i18n="allFilters">Tous les filtres</option>
+          <option value="selected" data-i18n="selectedFilter">Filtre sélectionné</option>
+        </select>
+        <button id="btn-execute" class="primary-btn" data-i18n="btnExecute">Exécuter</button>
+        <span id="execute-status" class="status-text"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal overlay pour l'éditeur de filtres -->
+  <div id="filter-editor-overlay" class="modal-overlay hidden">
+    <div class="modal-content">
+      <!-- Contenu chargé dynamiquement -->
+    </div>
+  </div>
+
+  <!-- Champ caché pour import de fichiers -->
+  <input type="file" id="import-file-input" accept=".json" style="display:none">
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>

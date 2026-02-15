@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "Filtre & Déplacement de Messages",
+    "description": "Nom de l'extension"
+  },
+  "extensionDescription": {
+    "message": "Filtrez et déplacez vos messages automatiquement selon des règles personnalisées, sur plusieurs dossiers simultanément.",
+    "description": "Description de l'extension"
+  },
+  "browserActionTitle": {
+    "message": "Filtres de messages",
+    "description": "Titre du bouton dans la barre d'outils"
+  },
+
+  "popupRunAll": {
+    "message": "Lancer tous les filtres",
+    "description": "Bouton pour exécuter tous les filtres"
+  },
+  "popupRunFolder": {
+    "message": "Lancer les filtres sur ce dossier",
+    "description": "Bouton pour exécuter les filtres sur le(s) dossier(s) sélectionné(s)"
+  },
+  "popupManage": {
+    "message": "Gestion des filtres",
+    "description": "Bouton pour ouvrir la page d'administration"
+  },
+
+  "tabApplyFilters": {
+    "message": "Appliquer filtres",
+    "description": "Titre de l'onglet Appliquer filtres"
+  },
+  "tabManageFilters": {
+    "message": "Gestion des filtres",
+    "description": "Titre de l'onglet Gestion des filtres"
+  },
+
+  "optionOnNewMessage": {
+    "message": "Lors de la réception d'un nouveau message",
+    "description": "Option d'application du filtre"
+  },
+  "optionManual": {
+    "message": "Lancer manuellement",
+    "description": "Option d'application du filtre"
+  },
+  "optionAfterJunk": {
+    "message": "Après la vérification des indésirables",
+    "description": "Option d'application du filtre"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "Supprimer mes propres adresses e-mail",
+    "description": "Option d'application du filtre"
+  },
+
+  "filtersFor": {
+    "message": "Filtres pour :",
+    "description": "Label de sélection du compte"
+  },
+  "allAccounts": {
+    "message": "Tous les comptes",
+    "description": "Option tous les comptes"
+  },
+  "localFolders": {
+    "message": "Dossiers locaux",
+    "description": "Dossiers locaux"
+  },
+  "filterOrderLabel": {
+    "message": "Les filtres seront appliqués dans l'ordre suivant :",
+    "description": "Label d'ordre des filtres"
+  },
+  "columnFilter": {
+    "message": "Filtre",
+    "description": "Colonne filtre"
+  },
+  "columnActive": {
+    "message": "Actif",
+    "description": "Colonne actif"
+  },
+  "columnDestination": {
+    "message": "Destination",
+    "description": "Colonne répertoire de destination"
+  },
+
+  "btnNew": {
+    "message": "Nouveau",
+    "description": "Bouton nouveau filtre"
+  },
+  "btnEdit": {
+    "message": "Modifier",
+    "description": "Bouton modifier filtre"
+  },
+  "btnDelete": {
+    "message": "Supprimer",
+    "description": "Bouton supprimer filtre"
+  },
+  "btnMoveTop": {
+    "message": "Placer en haut",
+    "description": "Bouton placer en haut"
+  },
+  "btnMoveUp": {
+    "message": "Monter",
+    "description": "Bouton monter"
+  },
+  "btnMoveDown": {
+    "message": "Descendre",
+    "description": "Bouton descendre"
+  },
+  "btnMoveBottom": {
+    "message": "Placer en bas",
+    "description": "Bouton placer en bas"
+  },
+
+  "btnCut": {
+    "message": "Couper",
+    "description": "Bouton couper"
+  },
+  "btnCopy": {
+    "message": "Copier",
+    "description": "Bouton copier"
+  },
+  "btnPaste": {
+    "message": "Coller",
+    "description": "Bouton coller"
+  },
+  "btnClone": {
+    "message": "Cloner",
+    "description": "Bouton cloner"
+  },
+  "btnSave": {
+    "message": "Sauvegarder",
+    "description": "Bouton sauvegarder"
+  },
+  "btnRestore": {
+    "message": "Restaurer",
+    "description": "Bouton restaurer"
+  },
+
+  "chooseLabel": {
+    "message": "Choisir :",
+    "description": "Label choisir"
+  },
+  "selectedFilter": {
+    "message": "Filtre sélectionné",
+    "description": "Option filtre sélectionné"
+  },
+  "allFilters": {
+    "message": "Tous les filtres",
+    "description": "Option tous les filtres"
+  },
+  "btnExecute": {
+    "message": "Exécuter",
+    "description": "Bouton exécuter"
+  },
+
+  "filterEditorTitle": {
+    "message": "Réglages du filtre",
+    "description": "Titre de la fenêtre d'édition du filtre"
+  },
+  "filterName": {
+    "message": "Nom du filtre :",
+    "description": "Label du nom du filtre"
+  },
+  "applyFilterWhen": {
+    "message": "Appliquer le filtre :",
+    "description": "Label application du filtre"
+  },
+
+  "fieldFrom": {
+    "message": "De",
+    "description": "Champ De"
+  },
+  "fieldTo": {
+    "message": "Pour",
+    "description": "Champ Pour"
+  },
+  "fieldCc": {
+    "message": "Copie à",
+    "description": "Champ Cc"
+  },
+  "fieldBcc": {
+    "message": "Copie cachée à",
+    "description": "Champ Bcc"
+  },
+  "fieldSubject": {
+    "message": "Sujet",
+    "description": "Champ Sujet"
+  },
+  "fieldBody": {
+    "message": "Corps",
+    "description": "Champ Corps"
+  },
+
+  "opContains": {
+    "message": "contient",
+    "description": "Opérateur contient"
+  },
+  "opNotContains": {
+    "message": "ne contient pas",
+    "description": "Opérateur ne contient pas"
+  },
+  "opIs": {
+    "message": "est",
+    "description": "Opérateur est"
+  },
+  "opIsNot": {
+    "message": "n'est pas",
+    "description": "Opérateur n'est pas"
+  },
+  "opInAddressBook": {
+    "message": "est dans mon carnet d'adresses",
+    "description": "Opérateur carnet d'adresses"
+  },
+  "opNotInAddressBook": {
+    "message": "n'est pas dans mon carnet d'adresses",
+    "description": "Opérateur pas dans carnet d'adresses"
+  },
+
+  "matchAll": {
+    "message": "Valider toutes les conditions suivantes",
+    "description": "Radio toutes les conditions"
+  },
+  "matchAny": {
+    "message": "Valider au moins une des conditions",
+    "description": "Radio au moins une condition"
+  },
+
+  "moveMessageTo": {
+    "message": "Déplacer le message vers :",
+    "description": "Label déplacer vers"
+  },
+  "chooseFolder": {
+    "message": "Choisir le dossier…",
+    "description": "Placeholder choix du dossier"
+  },
+  "folderOn": {
+    "message": "sur",
+    "description": "Séparateur dossier sur compte"
+  },
+
+  "btnSaveFilter": {
+    "message": "Enregistrer",
+    "description": "Bouton enregistrer le filtre"
+  },
+  "btnCancel": {
+    "message": "Annuler",
+    "description": "Bouton annuler"
+  },
+
+  "confirmDelete": {
+    "message": "Voulez-vous vraiment supprimer ce filtre ?",
+    "description": "Message de confirmation de suppression"
+  },
+  "noFilterSelected": {
+    "message": "Aucun filtre sélectionné.",
+    "description": "Message si aucun filtre sélectionné"
+  },
+  "filterSaved": {
+    "message": "Filtre enregistré avec succès.",
+    "description": "Message de succès"
+  },
+  "filtersExecuted": {
+    "message": "Filtres exécutés avec succès.",
+    "description": "Message d'exécution terminée"
+  },
+  "errorEmptyRule": {
+    "message": "Une règle de filtrage ne peut pas avoir de valeur vide.",
+    "description": "Erreur règle vide"
+  },
+  "errorNoDestination": {
+    "message": "Veuillez choisir un dossier de destination.",
+    "description": "Erreur pas de destination"
+  },
+  "errorNoFilterName": {
+    "message": "Veuillez saisir un nom pour le filtre.",
+    "description": "Erreur pas de nom"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "ex: FROM contains john@mail.com AND SUBJECT contains facture",
+    "description": "Placeholder du champ de filtre intelligent"
+  },
+  "smartFilterHelp": {
+    "message": "Syntaxe : {CHAMP} {OPÉRATEUR} {valeur} [AND|OR ...]\nChamps : FROM, TO, CC, BCC, SUBJECT, BODY\nOpérateurs : contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Aide syntaxe filtre intelligent"
+  },
+
+  "accountLabel": {
+    "message": "Compte",
+    "description": "Label compte dans le sélecteur"
+  },
+  "activeLabel": {
+    "message": "Actif",
+    "description": "Label actif dans le sélecteur"  
+  },
+
+  "exportSuccess": {
+    "message": "Configuration exportée avec succès.",
+    "description": "Message export réussi"
+  },
+  "importSuccess": {
+    "message": "Configuration importée avec succès.",
+    "description": "Message import réussi"
+  },
+  "importError": {
+    "message": "Erreur lors de l'importation du fichier.",
+    "description": "Erreur import"
+  }
+}

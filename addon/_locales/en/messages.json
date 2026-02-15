@@ -1,0 +1,307 @@
+{
+  "extensionName": {
+    "message": "Filter & Move Messages",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Filter and move your messages automatically with custom rules, across multiple folders simultaneously.",
+    "description": "Extension description"
+  },
+  "browserActionTitle": {
+    "message": "Message Filters",
+    "description": "Toolbar button title"
+  },
+
+  "popupRunAll": {
+    "message": "Run all filters",
+    "description": "Button to run all filters"
+  },
+  "popupRunFolder": {
+    "message": "Run filters on this folder",
+    "description": "Button to run filters on selected folder(s)"
+  },
+  "popupManage": {
+    "message": "Manage filters",
+    "description": "Button to open admin page"
+  },
+
+  "tabApplyFilters": {
+    "message": "Apply Filters",
+    "description": "Apply filters tab title"
+  },
+  "tabManageFilters": {
+    "message": "Manage Filters",
+    "description": "Manage filters tab title"
+  },
+
+  "optionOnNewMessage": {
+    "message": "When receiving a new message",
+    "description": "Filter apply option"
+  },
+  "optionManual": {
+    "message": "Run manually",
+    "description": "Filter apply option"
+  },
+  "optionAfterJunk": {
+    "message": "After junk classification",
+    "description": "Filter apply option"
+  },
+  "optionRemoveOwnEmails": {
+    "message": "Remove my own email addresses",
+    "description": "Filter apply option"
+  },
+
+  "filtersFor": {
+    "message": "Filters for:",
+    "description": "Account selection label"
+  },
+  "allAccounts": {
+    "message": "All accounts",
+    "description": "All accounts option"
+  },
+  "localFolders": {
+    "message": "Local Folders",
+    "description": "Local folders"
+  },
+  "filterOrderLabel": {
+    "message": "Filters will be applied in the following order:",
+    "description": "Filter order label"
+  },
+  "columnFilter": {
+    "message": "Filter",
+    "description": "Filter column"
+  },
+  "columnActive": {
+    "message": "Active",
+    "description": "Active column"
+  },
+  "columnDestination": {
+    "message": "Destination",
+    "description": "Destination folder column"
+  },
+
+  "btnNew": {
+    "message": "New",
+    "description": "New filter button"
+  },
+  "btnEdit": {
+    "message": "Edit",
+    "description": "Edit filter button"
+  },
+  "btnDelete": {
+    "message": "Delete",
+    "description": "Delete filter button"
+  },
+  "btnMoveTop": {
+    "message": "Move to Top",
+    "description": "Move to top button"
+  },
+  "btnMoveUp": {
+    "message": "Move Up",
+    "description": "Move up button"
+  },
+  "btnMoveDown": {
+    "message": "Move Down",
+    "description": "Move down button"
+  },
+  "btnMoveBottom": {
+    "message": "Move to Bottom",
+    "description": "Move to bottom button"
+  },
+
+  "btnCut": {
+    "message": "Cut",
+    "description": "Cut button"
+  },
+  "btnCopy": {
+    "message": "Copy",
+    "description": "Copy button"
+  },
+  "btnPaste": {
+    "message": "Paste",
+    "description": "Paste button"
+  },
+  "btnClone": {
+    "message": "Clone",
+    "description": "Clone button"
+  },
+  "btnSave": {
+    "message": "Save",
+    "description": "Save button"
+  },
+  "btnRestore": {
+    "message": "Restore",
+    "description": "Restore button"
+  },
+
+  "chooseLabel": {
+    "message": "Choose:",
+    "description": "Choose label"
+  },
+  "selectedFilter": {
+    "message": "Selected filter",
+    "description": "Selected filter option"
+  },
+  "allFilters": {
+    "message": "All filters",
+    "description": "All filters option"
+  },
+  "btnExecute": {
+    "message": "Execute",
+    "description": "Execute button"
+  },
+
+  "filterEditorTitle": {
+    "message": "Filter Settings",
+    "description": "Filter editor window title"
+  },
+  "filterName": {
+    "message": "Filter name:",
+    "description": "Filter name label"
+  },
+  "applyFilterWhen": {
+    "message": "Apply filter:",
+    "description": "Filter apply label"
+  },
+
+  "fieldFrom": {
+    "message": "From",
+    "description": "From field"
+  },
+  "fieldTo": {
+    "message": "To",
+    "description": "To field"
+  },
+  "fieldCc": {
+    "message": "Cc",
+    "description": "Cc field"
+  },
+  "fieldBcc": {
+    "message": "Bcc",
+    "description": "Bcc field"
+  },
+  "fieldSubject": {
+    "message": "Subject",
+    "description": "Subject field"
+  },
+  "fieldBody": {
+    "message": "Body",
+    "description": "Body field"
+  },
+
+  "opContains": {
+    "message": "contains",
+    "description": "Contains operator"
+  },
+  "opNotContains": {
+    "message": "does not contain",
+    "description": "Does not contain operator"
+  },
+  "opIs": {
+    "message": "is",
+    "description": "Is operator"
+  },
+  "opIsNot": {
+    "message": "is not",
+    "description": "Is not operator"
+  },
+  "opInAddressBook": {
+    "message": "is in my address book",
+    "description": "In address book operator"
+  },
+  "opNotInAddressBook": {
+    "message": "is not in my address book",
+    "description": "Not in address book operator"
+  },
+
+  "matchAll": {
+    "message": "Match all of the following conditions",
+    "description": "Match all radio"
+  },
+  "matchAny": {
+    "message": "Match any of the following conditions",
+    "description": "Match any radio"
+  },
+
+  "moveMessageTo": {
+    "message": "Move message to:",
+    "description": "Move to label"
+  },
+  "chooseFolder": {
+    "message": "Choose folder…",
+    "description": "Folder choice placeholder"
+  },
+  "folderOn": {
+    "message": "on",
+    "description": "Folder on account separator"
+  },
+
+  "btnSaveFilter": {
+    "message": "Save",
+    "description": "Save filter button"
+  },
+  "btnCancel": {
+    "message": "Cancel",
+    "description": "Cancel button"
+  },
+
+  "confirmDelete": {
+    "message": "Are you sure you want to delete this filter?",
+    "description": "Delete confirmation message"
+  },
+  "noFilterSelected": {
+    "message": "No filter selected.",
+    "description": "No filter selected message"
+  },
+  "filterSaved": {
+    "message": "Filter saved successfully.",
+    "description": "Success message"
+  },
+  "filtersExecuted": {
+    "message": "Filters executed successfully.",
+    "description": "Execution complete message"
+  },
+  "errorEmptyRule": {
+    "message": "A filter rule cannot have an empty value.",
+    "description": "Empty rule error"
+  },
+  "errorNoDestination": {
+    "message": "Please choose a destination folder.",
+    "description": "No destination error"
+  },
+  "errorNoFilterName": {
+    "message": "Please enter a filter name.",
+    "description": "No name error"
+  },
+
+  "smartFilterPlaceholder": {
+    "message": "e.g.: FROM contains john@mail.com AND SUBJECT contains invoice",
+    "description": "Smart filter field placeholder"
+  },
+  "smartFilterHelp": {
+    "message": "Syntax: {FIELD} {OPERATOR} {value} [AND|OR ...]\nFields: FROM, TO, CC, BCC, SUBJECT, BODY\nOperators: contains, not_contains, is, is_not, in_addressbook, not_in_addressbook",
+    "description": "Smart filter syntax help"
+  },
+
+  "accountLabel": {
+    "message": "Account",
+    "description": "Account label in selector"
+  },
+  "activeLabel": {
+    "message": "Active",
+    "description": "Active label in selector"
+  },
+
+  "exportSuccess": {
+    "message": "Configuration exported successfully.",
+    "description": "Export success message"
+  },
+  "importSuccess": {
+    "message": "Configuration imported successfully.",
+    "description": "Import success message"
+  },
+  "importError": {
+    "message": "Error importing file.",
+    "description": "Import error"
+  }
+}

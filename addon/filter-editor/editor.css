@@ -1,0 +1,402 @@
+/* ═══════════════════════════════════════════════
+   Éditeur de filtres - Styles
+   ═══════════════════════════════════════════════ */
+
+.editor-container {
+  padding: 20px;
+}
+
+.editor-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent-color);
+  color: var(--text-primary);
+}
+
+/* ─── Champs ─── */
+.editor-field {
+  margin-bottom: 12px;
+}
+
+.editor-field label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+.editor-input {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.editor-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 2px rgba(0, 96, 223, 0.2);
+}
+
+.editor-input[readonly] {
+  background: var(--bg-secondary);
+  cursor: pointer;
+}
+
+/* ─── Fieldset ─── */
+.editor-fieldset {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.editor-fieldset legend {
+  font-weight: 600;
+  padding: 0 6px;
+  font-size: 13px;
+}
+
+/* ─── Checkboxes ─── */
+.editor-checkbox-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editor-checkbox-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* ─── Sélection de comptes par filtre ─── */
+.editor-account-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editor-account-item {
+  padding: 2px 0;
+}
+
+.editor-account-item label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.editor-account-list {
+  padding-left: 20px;
+  border-left: 2px solid var(--border-light);
+  margin-top: 4px;
+}
+
+/* ─── Radio buttons ─── */
+.editor-match-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+}
+
+.editor-match-mode label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* ─── Conditions ─── */
+.condition-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  padding: 6px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+}
+
+.condition-row select {
+  padding: 5px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.condition-row .condition-field {
+  min-width: 100px;
+}
+
+.condition-row .condition-operator {
+  min-width: 180px;
+}
+
+.condition-row .condition-value {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 12px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.condition-row .condition-addressbook {
+  min-width: 150px;
+}
+
+.condition-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.condition-btn:hover {
+  background: var(--bg-hover);
+}
+
+.condition-btn.btn-add {
+  color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.condition-btn.btn-remove {
+  color: var(--danger-color);
+  border-color: var(--danger-color);
+}
+
+/* ─── Smart filter ─── */
+.smart-filter-section {
+  margin-top: 10px;
+}
+
+.smart-filter-section details {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 8px;
+}
+
+.smart-filter-section summary {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.smart-filter-content {
+  margin-top: 8px;
+}
+
+.smart-filter-content textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-family: monospace;
+  font-size: 12px;
+  resize: vertical;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.smart-filter-help {
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  white-space: pre-line;
+  font-family: monospace;
+  background: var(--bg-secondary);
+  padding: 6px;
+  border-radius: var(--radius);
+}
+
+.small-btn {
+  padding: 4px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.15s;
+  color: var(--text-primary);
+}
+
+.small-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-color);
+}
+
+/* ─── Sélection de dossier ─── */
+.folder-selector {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.folder-selector .editor-input {
+  flex: 1;
+}
+
+.folder-tree-container {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  max-height: 250px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.folder-tree-container.hidden {
+  display: none;
+}
+
+.folder-tree-search {
+  padding: 6px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.folder-tree-search input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  font-size: 12px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.folder-tree {
+  overflow-y: auto;
+  flex: 1;
+  padding: 4px;
+  max-height: 200px;
+}
+
+/* Arbre de dossiers */
+.tree-node {
+  user-select: none;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-size: 12px;
+  transition: background 0.1s;
+}
+
+.tree-item:hover {
+  background: var(--bg-hover);
+}
+
+.tree-item.selected {
+  background: var(--bg-selected);
+  color: var(--text-on-accent);
+}
+
+.tree-toggle {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.tree-toggle.expanded::before {
+  content: "▾";
+}
+
+.tree-toggle.collapsed::before {
+  content: "▸";
+}
+
+.tree-toggle.leaf {
+  visibility: hidden;
+}
+
+.tree-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.tree-label {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tree-account-label {
+  font-size: 10px;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+
+.tree-item.selected .tree-account-label {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tree-children {
+  padding-left: 16px;
+}
+
+.tree-children.hidden {
+  display: none;
+}
+
+/* ─── Boutons de validation ─── */
+.editor-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.secondary-btn {
+  padding: 8px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-primary);
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-primary);
+  transition: all 0.15s;
+}
+
+.secondary-btn:hover {
+  background: var(--bg-hover);
+}
