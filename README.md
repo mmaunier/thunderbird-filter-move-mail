@@ -1,173 +1,176 @@
-# Filtre & Déplacement de Messages — Thunderbird Extension
+🇬🇧 English | 🇫🇷 [Français](README.fr.md)
 
-Extension Thunderbird 128+ pour filtrer et déplacer automatiquement les messages selon des règles personnalisées.
+# Filter & Move Messages — Thunderbird Extension
+
+Thunderbird 128+ extension to automatically filter and move messages based on custom rules.
 
 ![Thunderbird](https://img.shields.io/badge/Thunderbird-128%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Version](https://img.shields.io/badge/version-1.0.0-orange)
 
-## Fonctionnalités
+## Features
 
-### Filtrage intelligent
-- **Filtrage par champs email** : De, Pour, Cc, Bcc (contient, est, ne contient pas, n'est pas)
-- **Filtrage par carnet d'adresses** : vérifie si l'expéditeur est dans un carnet d'adresses Thunderbird
-- **Filtrage par sujet et corps** du message
-- **Smart Filter** : syntaxe avancée type Gmail (`FROM contains john@mail.com AND SUBJECT contains facture`)
-- **Conditions multiples** : mode ET (toutes les conditions) ou OU (au moins une condition)
-- **Support des accolades** pour les valeurs contenant des espaces : `SUBJECT contains {ma valeur}`
+### Smart Filtering
+- **Email field filtering**: From, To, Cc, Bcc (contains, is, not contains, is not)
+- **Address book filtering**: checks if the sender is in a Thunderbird address book
+- **Subject and body filtering**
+- **Smart Filter**: advanced Gmail-like syntax (`FROM contains john@mail.com AND SUBJECT contains invoice`)
+- **Multiple conditions**: AND mode (all conditions) or OR mode (at least one condition)
+- **Brace support** for values containing spaces: `SUBJECT contains {my value}`
 
-### Exécution optimisée
-- **"Lancer tous les filtres"** : scanne uniquement les **INBOX** des comptes sélectionnés (pas les sous-dossiers)
-- **"Lancer les filtres sur ce dossier"** : exécute sur le(s) dossier(s) sélectionné(s) dans Thunderbird (multi-sélection supportée)
-- **Premier filtre gagnant** : chaque message est traité par le premier filtre correspondant (ordre de priorité)
-- **Déplacements groupés** : un seul appel API par destination pour de meilleures performances
-- **Protection anti-boucle** : jamais de déplacement vers le dossier source
+### Optimized Execution
+- **"Run all filters"**: scans only the **INBOX** of selected accounts (not subfolders)
+- **"Run filters on this folder"**: runs on the selected folder(s) in Thunderbird (multi-selection supported)
+- **First matching filter wins**: each message is processed by the first matching filter (priority order)
+- **Batch moves**: a single API call per destination for better performance
+- **Anti-loop protection**: never moves to the source folder
 
-### Sélection de comptes par filtre
-- Chaque filtre possède sa propre sélection de comptes (tous ou individuels)
-- Permet de cibler précisément les boîtes de réception à scanner
+### Per-Filter Account Selection
+- Each filter has its own account selection (all or individual)
+- Precisely target which inboxes to scan
 
-### Page d'administration (2 onglets)
+### Administration Page (2 tabs)
 
-#### Onglet "Appliquer filtres"
-- Exécution automatique à la réception de nouveaux messages
-- Exécution manuelle
-- Exécution après vérification des indésirables
-- Option de suppression de ses propres adresses email
+#### "Apply Filters" Tab
+- Automatic execution on new message arrival
+- Manual execution
+- Execution after junk mail check
+- Option to remove own email addresses
 
-#### Onglet "Gestion des filtres"
-- **Barre d'outils** : Nouveau / Supprimer / Cloner / Modifier / Sauvegarder / Restaurer
-- **Tableau des filtres** adaptatif (occupe toute la hauteur disponible) avec 4 colonnes :
-  - Filtre (nom)
-  - Smart Filter (syntaxe condensée)
-  - Destination (répertoire cible)
-  - Actif (case à cocher)
-- Réorganisation par glissement : ⤒ Haut / ↑ Monter / ↓ Descendre / ⤓ Bas
-- Exécution ciblée : tous les filtres ou filtre sélectionné
+#### "Filter Management" Tab
+- **Toolbar**: New / Delete / Clone / Edit / Export / Import
+- **Adaptive filter table** (fills available height) with 4 columns:
+  - Filter (name)
+  - Smart Filter (condensed syntax)
+  - Destination (target folder)
+  - Active (checkbox)
+- Drag reordering: ⤒ Top / ↑ Up / ↓ Down / ⤓ Bottom
+- Targeted execution: all filters or selected filter
 
-### Éditeur de filtres (fenêtre modale)
-- Nom du filtre
-- Options d'application (nouveau message, manuel, après indésirables)
-- Sélection des comptes ciblés par le filtre
-- Mode de correspondance : AU MOINS UNE condition / TOUTES les conditions
-- Conditions dynamiques avec boutons +/- (champ, opérateur, valeur)
-- Arbre de dossiers navigable avec recherche pour choisir la destination
-- Aperçu Smart Filter en temps réel
-- Textarea Smart Filter éditable avec synchronisation bidirectionnelle
+### Filter Editor (Modal Window)
+- Filter name
+- Application options (new message, manual, after junk check)
+- Per-filter account selection
+- Match mode: AT LEAST ONE condition / ALL conditions
+- Dynamic conditions with +/- buttons (field, operator, value)
+- Browsable folder tree with search to choose destination
+- Real-time Smart Filter preview
+- Editable Smart Filter textarea with bidirectional sync
 
-### Popup barre d'outils
-- **Lancer tous les filtres** — scanne les INBOX des comptes configurés
-- **Lancer les filtres sur ce dossier** — exécute sur le(s) dossier(s) sélectionné(s)
-- **Gestion des filtres** — ouvre la page d'administration
+### Toolbar Popup
+- **Run all filters** — scans configured accounts' inboxes
+- **Run filters on this folder** — runs on selected folder(s)
+- **Filter management** — opens the administration page
 
-### Logs
-- Résumé concis par dossier avec détail par filtre et par message (auteur + sujet)
-- Pas de log verbeux en fonctionnement normal
+### Logging
+- Concise per-folder summary with per-filter and per-message detail (author + subject)
+- No verbose logging in normal operation
 
-## Structure du projet
+## Project Structure
 
 ```
 thunderbird-filter-move-mail/
-├── addon/                          # Extension Thunderbird
+├── addon/                          # Thunderbird Extension
 │   ├── manifest.json               # Manifest V2 (TB 128+)
 │   ├── _locales/
-│   │   ├── en/messages.json        # Anglais
-│   │   └── fr/messages.json        # Français (par défaut)
+│   │   ├── en/messages.json        # English
+│   │   └── fr/messages.json        # French (default)
 │   ├── background/
-│   │   ├── background.html         # Page background
-│   │   └── background.js           # Script principal (événements, communication)
+│   │   ├── background.html         # Background page
+│   │   └── background.js           # Main script (events, messaging)
 │   ├── popup/
-│   │   ├── popup.html              # Popup du bouton toolbar
+│   │   ├── popup.html              # Toolbar button popup
 │   │   ├── popup.css
 │   │   └── popup.js
 │   ├── options/
-│   │   ├── options.html            # Page d'administration (2 onglets)
+│   │   ├── options.html            # Administration page (2 tabs)
 │   │   ├── options.css
 │   │   └── options.js
 │   ├── filter-editor/
-│   │   ├── editor.html             # Modal éditeur de filtre
+│   │   ├── editor.html             # Filter editor modal
 │   │   ├── editor.css
 │   │   └── editor.js
 │   ├── lib/
-│   │   ├── storage.js              # Persistance (browser.storage.local)
-│   │   ├── filter-engine.js        # Moteur de filtrage (matching + exécution)
-│   │   └── account-manager.js      # Gestion comptes/dossiers
+│   │   ├── storage.js              # Persistence (browser.storage.local)
+│   │   ├── filter-engine.js        # Filter engine (matching + execution)
+│   │   └── account-manager.js      # Account/folder management
 │   └── icons/
 │       ├── filter-16.svg
 │       ├── filter-32.svg
 │       ├── filter-48.svg
 │       └── filter-128.svg
-├── releases/                       # Fichiers .xpi (releases)
-├── updates.json                    # Mises à jour auto pour Thunderbird
+├── releases/                       # .xpi files (releases)
+├── updates.json                    # Auto-update for Thunderbird
 ├── LICENSE                         # MIT
-└── README.md
+├── README.md                       # English documentation
+└── README.fr.md                    # French documentation
 ```
 
 ## Installation
 
-### Depuis le fichier .xpi (recommandé)
-1. Télécharger le fichier `.xpi` depuis les [Releases](https://github.com/mmaunier/thunderbird-filter-move-mail/releases)
-2. Ouvrir Thunderbird → Menu → Outils → Modules complémentaires
-3. ⚙️ → Installer un module depuis un fichier → Sélectionner le `.xpi`
+### From .xpi file (recommended)
+1. Download the `.xpi` file from [Releases](https://github.com/mmaunier/thunderbird-filter-move-mail/releases)
+2. Open Thunderbird → Menu → Tools → Add-ons
+3. ⚙️ → Install Add-on From File → Select the `.xpi`
 
-### En mode développement
-1. Ouvrir Thunderbird
-2. Menu → Outils → Modules complémentaires
-3. ⚙️ → Debug Add-ons → Charger un module temporaire
-4. Sélectionner le fichier `addon/manifest.json`
+### Development mode
+1. Open Thunderbird
+2. Menu → Tools → Add-ons
+3. ⚙️ → Debug Add-ons → Load Temporary Add-on
+4. Select the `addon/manifest.json` file
 
-## Syntaxe Smart Filter
+## Smart Filter Syntax
 
 ```
-FROM contains john@example.com AND SUBJECT contains facture
+FROM contains john@example.com AND SUBJECT contains invoice
 TO is admin@company.com OR CC contains team
 FROM in_addressbook
-BODY contains {mot-clé important avec espaces}
+BODY contains {important keyword with spaces}
 ```
 
-| Champs | `FROM`, `TO`, `CC`, `BCC`, `SUBJECT`, `BODY` |
+| Fields | `FROM`, `TO`, `CC`, `BCC`, `SUBJECT`, `BODY` |
 |--------|----------------------------------------------|
-| **Opérateurs** | `contains`, `not_contains`, `is`, `is_not`, `in_addressbook`, `not_in_addressbook` |
-| **Connecteurs** | `AND` (toutes les conditions), `OR` (au moins une) |
-| **Accolades** | `{valeur avec espaces}` pour les valeurs multi-mots |
+| **Operators** | `contains`, `not_contains`, `is`, `is_not`, `in_addressbook`, `not_in_addressbook` |
+| **Connectors** | `AND` (all conditions), `OR` (at least one) |
+| **Braces** | `{value with spaces}` for multi-word values |
 
-## APIs Thunderbird utilisées
+## Thunderbird APIs Used
 
 | API | Usage |
 |-----|-------|
-| `accounts` | Lister les comptes et identités |
-| `addressBooks` | Vérifier les contacts dans les carnets d'adresses |
-| `contacts` | Recherche rapide de contacts |
-| `messages` | Lister, lire et déplacer les messages |
-| `mailTabs` | Obtenir le(s) dossier(s) sélectionné(s) (multi-sélection TB 128+) |
-| `storage` | Stocker filtres et préférences |
-| `i18n` | Internationalisation (fr/en) |
+| `accounts` | List accounts and identities |
+| `addressBooks` | Check contacts in address books |
+| `contacts` | Quick contact search |
+| `messages` | List, read, and move messages |
+| `mailTabs` | Get selected folder(s) (multi-selection TB 128+) |
+| `storage` | Store filters and preferences |
+| `i18n` | Internationalization (fr/en) |
 
 ## Permissions
 
 | Permission | Usage |
 |-----------|-------|
-| `accountsRead` | Lecture des comptes et dossiers |
-| `addressBooks` | Accès aux carnets d'adresses |
-| `messagesRead` | Lecture des messages |
-| `messagesMove` | Déplacement des messages |
-| `messagesDelete` | Suppression des messages |
-| `storage` | Stockage local des filtres et préférences |
+| `accountsRead` | Read accounts and folders |
+| `addressBooks` | Access address books |
+| `messagesRead` | Read messages |
+| `messagesMove` | Move messages |
+| `messagesDelete` | Delete messages |
+| `storage` | Local storage for filters and preferences |
 
-## Langues
+## Languages
 
-- 🇫🇷 Français (par défaut)
-- 🇬🇧 Anglais
+- 🇫🇷 French (default)
+- 🇬🇧 English
 
-## Compatibilité
+## Compatibility
 
 - Thunderbird 128+ (Manifest V2)
-- Testé avec Thunderbird 147
+- Tested with Thunderbird 147
 
-## Licence
+## License
 
 [MIT](LICENSE)
 
-## Auteur
+## Author
 
 Mikael Maunier — [@mmaunier](https://github.com/mmaunier)
