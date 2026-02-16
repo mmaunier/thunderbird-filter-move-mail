@@ -32,6 +32,7 @@ function extractEmails(text) {
  */
 async function isInAddressBook(email, addressBookId = null) {
   try {
+    const emailLower = email.toLowerCase();
     const books = await messenger.addressBooks.list();
     const targetBooks = addressBookId
       ? books.filter((b) => b.id === addressBookId)
@@ -39,8 +40,15 @@ async function isInAddressBook(email, addressBookId = null) {
 
     for (const book of targetBooks) {
       const contacts = await messenger.contacts.quickSearch(book.id, email);
-      if (contacts.length > 0) {
-        return true;
+      // quickSearch fait un match partiel — on doit vérifier l'email exact
+      for (const contact of contacts) {
+        const props = contact.properties || {};
+        if (
+          (props.PrimaryEmail && props.PrimaryEmail.toLowerCase() === emailLower) ||
+          (props.SecondEmail && props.SecondEmail.toLowerCase() === emailLower)
+        ) {
+          return true;
+        }
       }
     }
     return false;
